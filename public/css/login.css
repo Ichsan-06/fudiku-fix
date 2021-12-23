@@ -1,0 +1,271 @@
+@font-face{
+	font-family: 'ManropeLight';
+	src: url('../fonts/Manrope/Manrope-Light.ttf');
+}
+@font-face{
+	font-family: 'Manrope';
+	src: url('../fonts/Manrope/Manrope-Regular.ttf');
+}
+@font-face{
+	font-family: 'ManropeBold';
+	src: url('../fonts/Manrope/Manrope-Bold.ttf');
+}
+
+body{
+    background-color: #FFF;
+    font-family: 'Manrope';
+    margin: 0;
+    padding: 0;
+}
+@media (min-width: 576px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .fudiku-login-user{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .fudiku-login-user .form-login{
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        font-family: 'Manrope';
+        width: 40vw;
+        background-color: #FFF;
+        padding: 250px 50px;
+    }
+    .fudiku-login-user .form-logo{
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    .fudiku-login-user .form-logo img{
+        object-fit: contain;
+    }
+    .fudiku-login-user .form-img{
+        position: relative;
+        background-image: url(../img/vector/masuk.png);
+        background-size: contain;
+        width: 60vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .fudiku-login-user .form-img::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .fudiku-login-user .form-login input{
+        border-radius: 15px;
+        height: 50px;
+        padding-left: 15px;
+        font-size: 14px;
+        border: 2px solid #F0F0F0;
+        font-family: 'ManropeLight';
+    }
+    .fudiku-login-user .form-login input:focus{
+        box-shadow: none;
+        border: 2px solid #EB484E;
+        /* box-shadow: 0 0 0 2px rgba(235, 72, 78); */
+    }
+    .fudiku-login-user .form-login .btn{
+        width: 100%;
+        border-radius: 15px;
+        color: #FFF;
+        padding: 12px;
+        background-image: linear-gradient(180deg,#F03A40,#EB484E);
+        border-color: #F03A40;
+        font-family: 'ManropeLight';
+    }
+    .fudiku-login-user .footer-title{
+        /* border: 1px solid #000; */
+        text-align: center;
+        font-size: 14px;
+    }
+    .fudiku-login-user .footer-title .dont-have-account,
+    .fudiku-login-user .footer-title .forget-password{
+        margin: 0;
+    }
+    .fudiku-login-user .footer-title .dont-have-account a,
+    .fudiku-login-user .footer-title .forget-password a{
+        text-decoration: none;
+        color: #F03A40;
+    }
+    .fudiku-login-admin{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+    .fudiku-login-admin .form-login{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 35%;
+        background-color: #FFF;
+        border: 2px solid #EFEFEF;
+        padding: 2.5rem;
+        border-radius: 15px;
+    }
+    .fudiku-login-admin .form-logo{
+        text-align: center;
+        /* border: 1px solid #000; */
+        margin-bottom: 1.25rem;
+    }
+    .fudiku-login-admin .form-login label{
+        font-family: 'ManropeBold';
+    }
+    .fudiku-login-admin .form-login input{
+        border-radius: 15px;
+        height: 50px;
+        padding-left: 15px;
+        font-size: 14px;
+        font-family: 'ManropeLight';
+        border: 2px solid #EFEFEF;
+    }
+    .fudiku-login-admin .form-login input:focus{
+        box-shadow: none;
+        border: 2px solid #EB484E;
+        /* box-shadow: 0 0 0 2px rgba(235, 72, 78); */
+    }
+    .fudiku-login-admin .form-login .btn{
+        border-radius: 15px;
+        background-image: linear-gradient(180deg,#F03A40,#EB484E);
+        border-color: #F03A40;
+        color: #FFF;
+        font-family: 'ManropeLight';
+        width: 100%;
+        padding: 12px;
+    }
+    .fudiku-login-admin .form-login .btn:focus{
+        background-color: #FF4551;
+    }
+    
+}
+@media (max-width: 576px){
+    .fudiku-login-user{
+        overflow: hidden;
+        display: flex;
+    }
+    .fudiku-login-user .form-login{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 1.5em;
+        background-color: #FFF;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        z-index: 1;
+        text-align: center;
+        border: 2px solid #EFEFEF;
+        border-bottom: none;
+    }
+    .fudiku-login-user .form-img{
+        position: relative;
+        background-image: url(../img/vector/masuk.png);
+        background-size: contain;
+        height: 410px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-login-user .form-img::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .fudiku-login-user .form-logo{
+        text-align: center;
+        /* border: 1px solid #000; */
+        margin-bottom: 1.25rem;
+    }
+    .fudiku-login-user .form-logo img{
+        object-fit: contain;
+    }
+    .fudiku-login-user .form-login input{
+        border-radius: 15px;
+        height: 50px;
+        padding-left: 15px;
+        font-size: 14px;
+        border: 2px solid #F0F0F0;
+        font-family: 'ManropeLight';
+    }
+    .fudiku-login-user .form-login input:focus{
+        box-shadow: none;
+        border: 2px solid #EB484E;
+        /* box-shadow: 0 0 0 2px rgba(235, 72, 78); */
+    }
+    .fudiku-login-user .form-login .btn{
+        width: 100%;
+        border-radius: 15px;
+        color: #FFF;
+        padding: 12px;
+        background-image: linear-gradient(180deg,#F03A40,#EB484E);
+        border-color: #F03A40;
+        font-family: 'ManropeLight';
+    }
+    .fudiku-login-user .footer-title{
+        /* border: 1px solid #000; */
+        text-align: center;
+        font-size: 14px;
+    }
+    .fudiku-login-user .footer-title .dont-have-account,
+    .fudiku-login-user .footer-title .forget-password{
+        margin: 0;
+    }
+    .fudiku-login-user .footer-title .dont-have-account a,
+    .fudiku-login-user .footer-title .forget-password a{
+        text-decoration: none;
+        color: #F03A40;
+    }
+    .fudiku-login-admin{
+
+    }
+    .fudiku-login-admin .form-login{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #FFF;
+        border: 2px solid #EFEFEF;
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    .fudiku-login-admin .form-logo{
+        text-align: center;
+        /* border: 1px solid #000; */
+        margin-bottom: 1.25rem;
+    }
+    .fudiku-login-admin .form-login input{
+        border-radius: 15px;
+        height: 50px;
+        padding-left: 15px;
+        font-size: 14px;
+        font-family: 'ManropeLight';
+        border: 2px solid #EFEFEF;
+    }
+    .fudiku-login-admin .form-login input:focus{
+        box-shadow: none;
+        border: 2px solid #EB484E;
+        /* box-shadow: 0 0 0 2px rgba(235, 72, 78); */
+    }
+    .fudiku-login-admin .form-login .btn{
+        border-radius: 15px;
+        background-image: linear-gradient(180deg,#F03A40,#EB484E);
+        border-color: #F03A40;
+        color: #FFF;
+        font-family: 'ManropeLight';
+        width: 100%;
+        padding: 12px;
+    }
+    .fudiku-login-admin .form-login .btn:focus{
+        background-color: #FF4551;
+    }
+}

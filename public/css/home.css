@@ -1,0 +1,2047 @@
+@font-face{
+	font-family: 'ManropeLight';
+	src: url('../fonts/Manrope/Manrope-Light.ttf');
+}
+@font-face{
+	font-family: 'Manrope';
+	src: url('../fonts/Manrope/Manrope-Regular.ttf');
+}   
+@font-face{
+	font-family: 'ManropeMedium';
+	src: url('../fonts/Manrope/Manrope-Medium.ttf');
+}
+@font-face{
+	font-family: 'ManropeBold';
+	src: url('../fonts/Manrope/Manrope-Bold.ttf');
+}
+
+@font-face{
+	font-family: 'ManropeExtraBold';
+	src: url('../fonts/Manrope/Manrope-ExtraBold.ttf');
+}
+body{
+    font-family: 'Manrope';
+}
+button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+.header-web .navbar-nav .nav-item{
+    margin-left: 1rem;
+}
+.header-web .navbar-nav .nav-item.active .nav-link{
+    color: #FFF;
+}
+.header-web .navbar-nav .nav-link{
+    color: #000;
+    font-family: 'Manrope';
+    font-size: 1.25rem;
+}
+.fudiku-home-area{
+    position: relative;
+    /* min-height: 660px; */
+    margin: 0rem 0rem .5rem 0rem;
+    overflow: hidden;
+    /* background-color: rgb(248, 248, 248); */
+    background-color: #FFF;
+    
+}
+.fudiku-home-area::after{
+    display: block;
+    z-index: -1;
+    top: -5rem;
+    right: -53rem;
+    border-radius: 25rem;
+    transform: rotate(-44deg);
+    background-color: #F5F7FA;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+.fudiku-home-area .home-content{
+    
+}
+.fudiku-home-area .home-item .home-img{
+    
+}
+.fudiku-home-area .home-item .home-img img{
+    border-radius: 15px;
+    object-fit: contain;
+}
+.fudiku-home-area .home-item .home-img .owl-item.active{
+    animation: fadeInLeft; 
+    animation-duration: 3s;
+}
+.fudiku-home-area .home-content .owl-dots .owl-dot{
+    background-color: rgba(0,0,0,0);
+}
+.fudiku-home-area .home-content .owl-dots .owl-dot span{
+    /* border: 3px solid #F03A40; */
+    background-color: #F0F0F0;
+    width: 12px;
+    height: 12px;
+}
+.fudiku-home-area .home-content .owl-dots .owl-dot span:hover{
+    background-color: #F03A40;
+}
+.fudiku-home-area .home-content .owl-dots .owl-dot.active span{
+    width: 24px;
+    border-radius: 15px;
+    background-color: #F03A40;
+}
+.fudiku-home-area .home-text{
+    animation: fadeIn; 
+    padding-top: 2.5rem;
+    animation-duration: 3s;
+}
+.fudiku-home-area .home-text .title{
+    font-family: 'ManropeExtraBold';
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(130deg,#F03A40,#EB484E);
+}
+.fudiku-home-area .home-text .body-text{
+    font-family: 'ManropeLight';
+    color: #555;
+    font-size: 14px;
+}
+.fudiku-home-area .home-text .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    color: #FFF;
+    font-family: 'Manrope';
+    border-radius: 15px;
+    padding: 12px;
+    width: 100%;
+}
+.fudiku-feature-area{
+    position: relative;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    /* background-color: rgb(248, 248, 248); */
+    background-color: #FFF;
+}
+.fudiku-feature-area .feature-title{
+    text-align: center;
+}
+.fudiku-feature-area .feature-title .title{
+    font-family: 'ManropeExtraBold';
+}
+.fudiku-feature-area .feature-content{
+    margin-top: 1.5rem;
+}
+.fudiku-feature-area .feature{
+    animation-duration: 2s;
+    animation: fadeIn;
+    text-align: center;
+    background-color: #FFF;
+    padding: 20px 15px;
+    border: 2px solid #EFEFEF;
+    /* box-shadow: 0 2px 4px rgb(15 34 58 / 12%); */
+    border-radius: 15px;
+}
+.fudiku-feature-area .feature-icon{
+    position: relative;
+}
+.fudiku-feature-area .feature-icon i:before{
+    color: #EB484E;
+    font-size: 50px;
+
+}
+.fudiku-feature-area .feature-info .title{
+    font-family: 'ManropeBold';
+    color: #000;
+}
+.fudiku-feature-area .feature-content .subtitle{
+    color: #555;
+    font-size: 12px;
+    font-family: 'ManropeLight';
+}
+.fudiku-packet-area{
+    position: relative;
+    padding: 5rem 0rem 2rem 0rem;
+    /* margin: 0.5rem 0rem; */
+    background-color: #FFF;
+    /* background-color: rgb(248, 248, 248); */
+}
+.fudiku-packet-area .packet-title{
+    text-align: center;
+}
+.fudiku-packet-area .packet-title .title{
+    font-family: 'ManropeExtraBold';
+}
+.fudiku-packet-area .packet-content{
+    margin-top: 1.25rem;
+}
+.fudiku-packet-area .packet{
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    /* box-shadow: 0 2px 4px rgb(15 34 58 / 12%); */
+    border: 2px solid #EFEFEF;
+    border-radius: 15px;
+}
+.fudiku-packet-area .packet a{
+    text-decoration: none;
+}
+.fudiku-packet-area .packet-img{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    /* overflow: hidden; */
+    /* border-radius: 15px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border: 1px solid #000; */
+}
+.fudiku-packet-area .packet-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* .fudiku-packet-area .packet-img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+} */
+.fudiku-packet-area .packet-category{
+    text-align: center;
+    padding: 1rem 0.5rem;
+    background-color: #FFF;
+}
+.fudiku-packet-area .packet-category .desc{
+    font-size: 12px;
+}
+.fudiku-packet-area .packet-category .name{
+    font-family: 'ManropeBold';
+    color: #000;
+    margin-bottom: 0;
+}
+.fudiku-packet-area .packet-category .desc{
+    font-family: 'ManropeLight';
+    color: #555;
+    font-size: 12px;
+}
+.fudiku-packet-area .packet-cta .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    color: #FFF;
+    padding: 12px;
+    width: 100%;
+    border-radius: 15px;
+}
+.fudiku-cta-area{
+    position: relative;
+    padding: 5rem 0rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    background-color: #FFF;
+    /* background-color: rgb(248, 248, 248); */
+}
+.fudiku-cta-area .cta-content{
+    background-color: #EBBD48;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 15px;
+}
+.fudiku-cta-area .cta-content .cta-title{
+    margin-bottom: 1.5rem;
+}
+.fudiku-cta-area .cta-content .cta-title .title{
+    font-family: 'ManropeLight';
+}
+.fudiku-cta-area .cta-content .cta-title .title,
+.fudiku-cta-area .cta-content .cta-title .subtitle{
+    color: #FFF;
+}
+.fudiku-cta-area .cta-content .cta-title .subtitle{
+    font-family: 'ManropeBold';
+}
+.fudiku-cta-area .cta-content .btn{
+    padding: 12px;
+    color: #FFF;
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    border-radius: 15px;
+    width: 200px;
+}
+.fudiku-supported-area{
+    position: relative;
+    padding: 5rem 0rem 6.5rem 0rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+    background-color: #FFF;
+
+}
+.fudiku-supported-area .supported-title .title{
+    text-align: center;
+    font-family: 'ManropeExtraBold';
+}
+.fudiku-supported-area .supported-content{
+    display: flex;
+    margin-top: 1.25rem;
+    justify-content: center;
+}
+.fudiku-supported-area .supported-content .supported{
+    margin: .5rem;
+    /* padding: .5rem;
+    border-radius: 15px;
+    background-color: #FFF; */
+}
+.fudiku-supported-area .supported-content .supported-img{
+    height: 150px;
+    width: 150px;
+}
+.fudiku-supported-area .supported-content .supported-img img{
+    width: 100%;
+}
+.fudiku-location-area{
+    position: relative;
+    background-color: #FFF;
+}
+.fudiku-location-area .location-form{
+    width: 50%;
+    /* border: 1px solid #000; */
+}
+.fudiku-location-area .location-form .location-title{
+    font-family: 'ManropeBold';
+    margin-bottom: 1rem;
+} 
+.fudiku-location-area .location-form .location-title .title{
+    margin: 0;
+}
+.fudiku-location-area .location-form .form-field{
+    position: relative;
+}
+.fudiku-location-area .location-form .form-field input{
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #EFEFEF;
+    box-shadow: none;
+}   
+.fudiku-location-area .location-form .form-field input:focus{
+    border: 2px solid #F03A40;
+}
+.fudiku-location-area .location-form .form-field button{
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    right: 5px;
+    color: #FFF;
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+}
+.fudiku-location-area .location-form .form-field button:focus{
+    background-color: #F03A40;
+    color: #FFF;
+}
+.fudiku-location-area .location-form .location-search-area{
+    position: absolute;
+    width: 100%;
+    display: block;
+    z-index: 1000;
+}
+.fudiku-location-area .location-form .location-search{
+    border: 2px solid #EFEFEF;
+    border-radius: 15px;
+    background: #FFF;
+    padding: 0;
+    overflow: hidden;
+}
+.fudiku-location-area .location-form .location-search-list{
+    height: 50px;
+    padding: 0.25rem 1rem;
+    line-height: 2.5;
+}
+.fudiku-location-area .location-form .location-search-list:focus{
+    background-color: #EB484E;
+}
+.fudiku-location-area .location-img-area{
+        width: 50%;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-location-area .location-img{
+        height: 500px;
+        width: 100%;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-location-area .location-img img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+.fudiku-delivery-area .delivery-title .title{
+    font-family: 'ManropeBold';
+}
+.fudiku-menu-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    background-color: #FFF;
+}
+.fudiku-menu-area .menu-wrapper{
+    
+}
+.fudiku-menu-area .wrapper-title{
+    /* display: flex; */
+    margin-bottom: 1.25rem;
+}
+.fudiku-menu-area .wrapper-title h4{
+    /* border: 1px solid #000; */
+    font-family: 'ManropeBold';
+}
+.fudiku-menu-area .wrapper-title .see {
+    /* border: 1px solid #000; */
+    font-family: 'ManropeLight';
+    font-size: 14px;
+    background-color: #EB484E;
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+.fudiku-menu-area .wrapper-title span a{
+    color: #FFF;
+    text-decoration: none;
+}
+.fudiku-menu-area .menu-content{
+    position: relative; 
+    overflow: hidden;
+    padding: 15px;
+    margin-bottom: 1.25rem;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+}
+.fudiku-menu-area .menu-content::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(200deg, #EBBD48 100%, #F2C041 0%);
+}
+.fudiku-menu-area .menu-title{
+    z-index: 1;
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+.fudiku-menu-area .menu-title .title{
+    font-family: 'ManropeExtraBold';
+    margin-bottom: 0rem;
+    color: #FFF;
+}
+.fudiku-menu-area .menu-title .subtitle{
+    font-family: 'ManropeLight';
+    margin-bottom: 0rem;
+    color: #f0f0f0;
+}
+.fudiku-menu-area .menu{
+    position: static;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+}
+.fudiku-menu-area .menu-item{
+    border-radius: 15px;
+    overflow: hidden;
+    height: 250px;
+}
+.fudiku-menu-area .menu-item a{
+    text-decoration: none;
+}
+.fudiku-menu-area .menu .menu-img{
+    height: 150px;
+}
+.fudiku-menu-area .menu .menu-img img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.fudiku-menu-area .menu .menu-desc{
+    height: 100px;
+    padding: 10px;
+    background-color: #FFF;
+}
+.fudiku-menu-area .menu .menu-desc .date{
+    font-size: 12px;
+    color: #555;
+}
+.fudiku-menu-area .menu .menu-desc .menu-name{
+    font-family: 'ManropeBold';
+    font-size: 14px;
+    color: #000;
+}
+.fudiku-menu-area .menu-popup .menu-popup-content{
+    border: none;
+    border-radius: 15px;
+}
+.fudiku-menu-area .menu-popup .menu-popup-header{
+    border-bottom: none;
+}
+.fudiku-menu-area .menu-popup .menu-popup-img{
+    width: 100% ;
+}
+.fudiku-menu-area .menu-popup .menu-popup-img img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    
+}
+.fudiku-menu-area .menu-popup .menu-popup-desc{
+    padding: 15px;
+}
+.fudiku-menu-area .menu-popup .menu-popup-desc .date{
+    color: #555;
+}
+.fudiku-menu-area .menu-popup .menu-popup-desc .info{
+    font-family: 'ManropeBold';
+}
+.fudiku-menu-area .menu-cta{
+
+}
+.fudiku-menu-area .menu-cta .btn{
+    font-family: 'ManropeLight';
+    padding: 12px;
+    color: #FFF;
+    background-image: linear-gradient(180deg,#DE474C,#EB484E);
+    border-color: #DE474C;
+    border-radius: 15px;
+    width: 200px;
+
+}
+.fudiku-menu-area .menu-cta .btn:focus{
+    background-color: #F03A40;
+}
+.fudiku-not-available-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    margin: .5rem 0rem 0rem 0rem;
+    background-color: #FFF;
+    /* border: 1px solid #000; */
+}
+.fudiku-not-available-area .not-available-img{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid #000; */
+    margin: auto auto 1.25rem auto;
+}
+.fudiku-not-available-area .not-available-img img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.fudiku-not-available-area .not-available-title{
+    text-align: center;
+}
+.fudiku-not-available-area .not-available-title .title{
+    font-family: 'ManropeBold';
+}
+.fudiku-order-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    margin: .5rem 0rem 0rem 0rem;
+    background-color: #FFF;
+}
+/* .fudiku-order-area .fudiku-menu-area-option::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 250px;
+    background-color: #EB484E;
+} */
+/* .fudiku-order-area .menu-title{
+    position: relative;
+    z-index: 1;
+} */
+.fudiku-order-area .order-menu-title{
+    margin-bottom: 1.25rem;
+    z-index: 1;
+    position: relative;
+}
+.fudiku-order-area .order-menu-title .title{
+    font-family: 'ManropeBold';
+    color: #FFF;
+    margin-bottom: 0;
+}
+.fudiku-order-area .order-menu-title .subtitle{
+    color: #f0f0f0;
+    margin-bottom: 0;
+    font-family: 'ManropeLight';
+}
+.fudiku-order-area .order-menu{
+    position: relative;
+    overflow: hidden;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    padding: 15px;
+}
+.fudiku-order-area .order-menu::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #EBBD48;
+}
+.fudiku-order-area .order-menu-item{
+    position: static;
+    /* border: 1px solid #000; */
+}
+.fudiku-order-area .order-menu-item .menu-item{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.fudiku-order-area .order-menu-item .menu-item a{
+    text-decoration: none;
+}
+.fudiku-order-area .order-menu-item .menu-img{
+    overflow: hidden;
+}
+.fudiku-order-area .order-menu-item .menu-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+}
+.fudiku-order-area .order-menu-item .menu-desc{
+    background-color: #FFF;
+    padding: 10px;   
+}
+.fudiku-order-area .order-menu-item .menu-desc .date{
+    font-size: 12px;
+    color: #555;
+    font-family: 'ManropeLight';
+}
+.fudiku-order-area .order-menu-item .menu-desc .menu-name{
+    font-family: 'ManropeBold';
+    font-size: 14px;
+    color: #000;
+}
+.fudiku-order-area .menu-popup .menu-popup-content{
+    border: none;
+    border-radius: 15px;
+}
+.fudiku-order-area .menu-popup .menu-popup-header{
+    border-bottom: none;
+}
+.fudiku-order-area .menu-popup .menu-popup-img{
+    width: 100% ;
+}
+.fudiku-order-area .menu-popup .menu-popup-img img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    
+}
+.fudiku-order-area .menu-popup .menu-popup-desc{
+    padding: 15px;
+}
+.fudiku-order-area .menu-popup .menu-popup-desc .date{
+    color: #555;
+}
+.fudiku-order-area .menu-popup .menu-popup-desc .info{
+    font-family: 'ManropeBold';
+}
+.fudiku-order-area .order-packet .packet-title{
+    margin-bottom: 1.25rem;
+}
+.fudiku-order-area .order-packet .packet-title .title{
+    font-family: 'ManropeBold';
+    margin-bottom: 0;
+}
+.fudiku-order-area .order-packet .packet{
+    margin-bottom: 1.25rem;
+}
+.fudiku-order-area .order-packet .packet input{
+    display: none;
+}
+.fudiku-order-area .order-packet .packet input:checked + .label{
+    background-color: #22E3C1;
+    color: #FFF;
+}
+.fudiku-order-area .order-packet .packet input:checked + .label .packet-info{
+    color: #000;
+}
+.fudiku-order-area .order-packet .packet input:checked + .label .packet-price{
+    color: #FFF;
+}
+.fudiku-order-area .order-packet .packet input:checked + .label .packet-price .tax{
+    color: #FFF;
+}
+.fudiku-order-area .order-packet .packet .label{
+    position: relative;
+    background-color: #F5F7FA;
+    display: flex;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+    line-height: 2;
+}
+.fudiku-order-area .order-packet .packet .label .packet-price .tax{
+    color: #F03A40;
+}
+.fudiku-order-area .order-packet .packet-info .name{
+    font-family: 'ManropeBold';   
+    font-size: 15px;
+}
+.fudiku-order-area .order-packet .packet-info .day{
+    color: #555;
+}
+.fudiku-order-area .order-packet .packet-price{
+    margin-left: auto;
+}
+.fudiku-order-area .order-packet .packet-price .price{
+    font-family: 'ManropeBold';
+    font-size: 1.15rem;
+}
+.fudiku-order-area .order-cta .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    font-family: 'ManropeLight';
+    color: #FFF;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    
+}
+.fudiku-schedule-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    margin: .5rem 0rem 0rem 0rem;
+    background-color: #FFF;
+}
+.fudiku-schedule-area .schedule-calendar{
+    /* border: 1px solid #000;    */
+}
+.fudiku-schedule-area .schedule-calendar .datepicker{
+    position: relative;
+    width: auto;
+    font-size: 18px;
+    font-family: 'Manrope';
+    border-radius: 15px;
+    background-color: #FFF;
+    border: 2px solid #EFEFEF;
+}
+.fudiku-schedule-area .schedule-calendar .datepicker--content{
+    padding: 0;
+}
+.fudiku-schedule-area .schedule-calendar .datepicker--days-names{
+    margin: 0;
+}
+.fudiku-schedule-area .schedule-calendar .datepicker--day-name{
+    color: #EB484E;
+    height: 50px; 
+}
+.fudiku-schedule-area .schedule-calendar .datepicker--nav{
+    height: 50px;
+    padding: 0;
+}
+.fudiku-schedule-area .schedule-calendar .datepicker--nav-action{
+    height: 50px;
+    width: 50px;
+}
+.fudiku-schedule-area .schedule-calendar .datepicker--nav-action:hover{
+    background-color: transparent;
+}
+.fudiku-schedule-area .schedule-calendar .datepicker--cell{
+    height: 50px;
+    border-radius: 0;
+    border-top: 1px solid #EFEFEF;
+}
+.fudiku-schedule-area .schedule-calendar .datepicker--cell.-selected-{
+    background-color: #F03A40;
+}
+
+.fudiku-schedule-area .schedule-menu-item{
+    position: static;
+    height: 250px;
+    margin-bottom: 1.25rem;
+}
+.fudiku-schedule-area .schedule-menu{
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    background-color: #F0F0F0;
+    border-radius: 15px;
+    /* border: 1px solid #000; */
+}
+.fudiku-schedule-area .schedule-menu::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 242px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #EBBD48;
+}
+.fudiku-schedule-area .schedule-menu-title{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1.25rem;
+}
+.fudiku-schedule-area .schedule-menu-title .title{
+    font-family: 'ManropeBold';
+    color: #FFF;
+    margin-bottom: 0;
+}   
+.fudiku-schedule-area .schedule-menu-title .subtitle{
+    color: #F0F0F0;
+    margin-bottom: 0;
+    font-family: 'ManropeLight';
+}
+.fudiku-schedule-area .schedule-menu .menu-item{
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 15px;
+}
+.fudiku-schedule-area .schedule-menu .menu-item a{
+    text-decoration: none;
+}
+.fudiku-schedule-area .schedule-menu .menu-img{
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+.fudiku-schedule-area .schedule-menu .menu-img img{
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}   
+.fudiku-schedule-area .schedule-menu .menu-desc{
+    padding: 10px;
+    background-color: #FFF;
+}
+.fudiku-schedule-area .schedule-menu .menu-desc .date{
+    font-size: 12px;
+    font-family: 'ManropeLight';
+    color: #555;
+}
+.fudiku-schedule-area .schedule-menu .menu-desc .menu-name{
+    font-family: 'ManropeBold';
+    font-size:  14px;
+    color: #000;
+}
+.fudiku-schedule-area .menu-popup .menu-popup-content{
+    border: none;
+    border-radius: 15px;
+}
+.fudiku-schedule-area .menu-popup .menu-popup-header{
+    border-bottom: none;
+}
+.fudiku-schedule-area .menu-popup .menu-popup-img{
+    width: 100% ;
+}
+.fudiku-schedule-area .menu-popup .menu-popup-img img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    
+}
+.fudiku-schedule-area .menu-popup .menu-popup-desc{
+    padding: 15px;
+}
+.fudiku-schedule-area .menu-popup .menu-popup-desc .date{
+    color: #555;
+}
+.fudiku-schedule-area .menu-popup .menu-popup-desc .info{
+    font-family: 'ManropeBold';
+}
+.fudiku-schedule-area .schedule-cta{
+}
+.fudiku-schedule-area .schedule-cta .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    font-family: 'ManropeLight';
+    color: #FFF;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+}
+.fudiku-form-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    background: #FFF;
+    margin: .5rem 0rem 0rem 0rem;
+}
+.fudiku-form-area .form-title{
+    margin-bottom: 1.25rem;
+}
+.fudiku-form-area .form-title .title{
+    font-family: 'ManropeBold';
+    margin-bottom: 0;
+}
+.fudiku-form-area .form-title .subtitle{
+    font-family: 'ManropeLight';
+    color: #555;
+    margin-bottom: 0;
+}
+.fudiku-form-area .form-area{
+}
+.fudiku-form-area .form-area .form-group{
+    margin-bottom: 1.25rem;
+}
+.fudiku-form-area .form-area .nice-select{
+    height: 50px;
+    line-height: 2.5;
+}
+.fudiku-form-area .form-area .nice-select.form-control .current{
+}
+.fudiku-form-area .form-group input[type=text],
+.fudiku-form-area .form-group input[type=email],
+.fudiku-form-area .form-group input[type=number]{
+    height: 50px;
+}
+.fudiku-form-area .form-group .form-control{
+    border-radius: 15px;
+    font-family: 'ManropeLight';
+    font-size: 14px;
+    border: 2px solid #EFEFEF;
+    width: 100%;
+
+}
+.fudiku-form-area .form-area .form-control:focus{
+    box-shadow: none;
+    border: 2px solid #EB484E;
+}
+.fudiku-form-area .form-area textarea{
+    height: 130px;
+}
+.fudiku-form-area .form-area .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    font-family: 'ManropeLight';
+    color: #FFF;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+}
+.fudiku-payment-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    margin-top: 0.5rem;
+    background-color: #FFF;
+}
+.fudiku-payment-area .payment-title .title{
+    font-family: 'ManropeBold';
+}
+.fudiku-payment-area .payment-content{
+    margin-top: 1.25rem;
+}
+.fudiku-payment-area .payment-method{
+    margin-bottom: 1.25rem;
+}
+.fudiku-payment-area .payment-method .payment input{
+    display: none;
+}
+.fudiku-payment-area .payment-method .payment input:checked + label{
+    background-color: #22E3C1;
+}
+.fudiku-payment-area .payment-method .payment label{
+    position: relative;
+    background-color: #F5F7FA;
+    height: 155px;
+    border: 2px solid #F5F7FA;
+    display: flex;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 15px;
+}
+.fudiku-payment-area .payment-method .payment-radio{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.fudiku-payment-area .payment-method .payment-logo{
+    width: 150px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.5rem;
+}
+.fudiku-payment-area .payment-method .payment-logo img{
+    width: 100%;
+    height: 100%;    
+}
+.fudiku-payment-area .payment-cta .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    font-family: 'ManropeLight';
+    color: #FFF;
+    padding: 12px;
+    width: 200px;
+    border-radius: 15px;
+}
+.fudiku-payment-detail-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    margin: .5rem 0rem 0rem 0rem;
+    background-color: #FFF;
+}
+.fudiku-payment-detail-area .detail-information{
+    background-color: #F5F7FA;
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+.fudiku-payment-detail-area .detail-information .detail-info{
+    margin-bottom: 1.25rem;
+}
+.fudiku-payment-detail-area .detail-form{
+    border: 2px solid #EFEFEF;
+    padding: 1.5rem;
+    
+    border-radius: 15px;
+}
+.fudiku-payment-detail-area .detail-form .form-group{
+    margin-bottom: 1.25rem;
+}
+.fudiku-payment-detail-area .detail-form .form-group input{
+    height: 50px;
+    border: none;
+    background-color: #F5F7FA;
+    border: 1px solid #EFEFEF;
+    border-radius: 15px;
+}
+.fudiku-payment-detail-area .detail-information .btn{
+    width: 100%;
+    border: 2px solid #EB484E;
+    color: #EB484E;
+    padding: 12px;
+    margin-top: 1.25rem;
+    border-radius: 15px;
+}
+.fudiku-payment-detail-area .detail-cta{
+    margin-top: 1.25rem;
+}
+.fudiku-payment-detail-area .detail-cta .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    font-family: 'ManropeLight';
+    color: #FFF;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+}
+.fudiku-cod-area{
+    position: relative;
+    padding: 1.5rem 0rem ;
+    margin: .5rem 0rem 0rem 0rem;
+    background-color: #FFF;
+    /* border: 1px solid #000; */
+}
+.fudiku-cod-area .cod-content{
+    /* border: 1px solid #000; */
+}
+.fudiku-cod-area .cod-img{
+    height: 400px;
+    width: 100%;
+    margin: auto auto 1.25rem auto;
+}
+.fudiku-cod-area .cod-img img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;    
+}
+.fudiku-cod-area .cod-title{
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.fudiku-cod-area .cod-title .title{
+    font-family: 'ManropeExtraBold';
+}
+.fudiku-cod-area .cod-cta{
+
+}
+.fudiku-cod-area .cod-cta .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    font-family: 'ManropeLight';
+    color: #FFF;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;   
+}
+.fudiku-profile-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    /* margin: .5rem 0rem 0rem 0rem; */
+    background-color: #FFFF;
+}
+.fudiku-profile-area .profile-content{
+    /* border: 1px solid #000; */
+}
+.fudiku-profile-area .profile{
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.fudiku-profile-area .profile-img{
+    /* border: 1px solid #000; */
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #EFEFEF;
+    margin-bottom: 1.25rem;
+}
+.fudiku-profile-area .profile-img:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+}
+.fudiku-profile-area .profile-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.fudiku-profile-area .profile-info{
+    margin-bottom: 1.25rem;
+    /* border: 1px solid #000; */
+}
+.fudiku-profile-area .profile-info .name{
+    font-family: 'ManropeBold';
+    margin-bottom: 0;
+}
+.fudiku-profile-area .profile-edit{
+    margin-bottom: 1.25rem;
+}
+.fudiku-profile-area .profile-edit .btn{
+    padding: 12px;
+    width: 150px;
+    border: 2px solid #EB484E;
+    color: #F03A40;
+    border-radius: 15px;
+}
+.fudiku-profile-area .profile-detail-info .detail-info{
+    margin-bottom: 1.5rem;
+    /* border: 1px solid #000; */
+}
+.fudiku-profile-area .profile-detail-info .detail-info .info-heading{
+    font-family: 'ManropeBold';
+}
+.fudiku-profile-area .profile-cta{
+    margin-top: 1.25rem;   
+}
+.fudiku-profile-area .profile-cta .btn{
+    border: 2px solid #F03A40;
+    font-family: 'Manrope';
+    color: #F03A40;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px; 
+}
+.fudiku-profile-area .profile-cta .btn:focus{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    color: #FFF;
+}
+.fudiku-profile-blank-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    /* margin: .5rem 0rem 0rem 0rem; */
+    background-color: #FFF;
+}
+.fudiku-profile-blank-area .profile-blank-content{
+    /* border: 1px solid #000; */
+}
+.fudiku-profile-blank-area .profile-blank-img{
+    /* border: 1px solid #000; */
+    margin-bottom: 1.25rem;
+    width: 100%;
+    height: 400px;
+    margin: auto auto 1.25rem auto;
+}
+.fudiku-profile-blank-area .profile-blank-img img{
+    /* border: 1px solid #000; */
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.fudiku-profile-blank-area .profile-blank-title{
+    text-align: center;
+    margin-bottom: 1.25rem;
+    /* border: 1px solid #000; */
+}
+.fudiku-profile-blank-area .profile-blank-title .title{
+    font-family: 'ManropeBold';
+    margin: 0;
+}
+.fudiku-profile-blank-area .profile-blank-cta{
+    /* border: 1px solid #000; */
+}
+.fudiku-profile-blank-area .profile-blank-cta .btn{
+    border: 2px solid #EB484E;
+    font-family: 'ManropeLight';
+    color: #EB484E;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+}
+.fudiku-profile-blank-area .profile-blank-cta .btn:focus{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    color: #FFF;
+}
+.fudiku-profile-edit-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    margin: .5rem 0rem 0rem 0rem;
+    background-color: #FFFF;
+
+}
+.fudiku-profile-edit-area .profile-edit-form{
+    /* border: 1px solid #000; */
+}
+.fudiku-profile-edit-area .profile-edit-img{
+    /* border: 1px solid #000; */
+    /* position: relative;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden; */
+    margin: 0;
+    margin-bottom: 1.25rem;
+}
+.fudiku-profile-edit-area .profile-edit-img .dropzone{
+    position: relative;
+    border: 2px dashed #EB484E;
+    border-radius: 50%;
+    width: 154px;
+    overflow: hidden;
+    padding: 0;
+    margin: auto;
+    
+}
+.fudiku-profile-edit-area .profile-edit-img .dropzone .dz-message{
+    font-size: 12px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.fudiku-profile-edit-area .profile-edit-img .dropzone .dz-preview{
+    margin: 0;
+    width: 150px;
+    height: 150px;
+}
+.fudiku-profile-edit-area .profile-edit-img .dropzone .dz-preview .dz-image{
+    /* margin: 0; */
+    /* border: 1px solid #000; */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.fudiku-profile-edit-area .profile-edit-img .dropzone .dz-preview .dz-error-message{
+    display: none;
+}
+.fudiku-profile-edit-area .profile-edit-img .dropzone .dz-preview .dz-image img{
+    width: 100%;
+    object-fit: contain;
+}
+/* .fudiku-profile-edit-area .profile-edit-img:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 0;
+} */
+/* .fudiku-profile-edit-area .profile-edit-img label{
+    position: relative;
+    z-index: 1;
+} */
+.fudiku-profile-edit-area .profile-edit-form .form-group{
+    margin-bottom: 1.25rem;
+}
+.fudiku-profile-edit-area .profile-edit-form .form-control{
+    border: 2px solid #EFEFEF;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 14px;
+    padding-left: 15px;
+}
+.fudiku-profile-edit-area .profile-edit-form .btn{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    color: #FFF;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+}
+.fudiku-finish-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    margin: .5rem 0rem 0rem 0rem;
+    background-color: #FFFF;
+
+}
+.fudiku-finish-area .finish-img{
+    height: 400px;
+    width: 100%;
+    margin: auto auto 1.25rem auto;
+    /* border: 1px solid #000; */
+    
+}
+.fudiku-finish-area .finish-img img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+.fudiku-finish-area .finish-title{
+    text-align: center;
+}
+.fudiku-finish-area .finish-title .title{
+    font-family: 'ManropeBold';
+}
+.fudiku-cart-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    /* margin: .5rem 0rem 0rem 0rem; */
+    background-color: #FFF;
+}
+.fudiku-cart-area .cart-content{
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    border: 2px solid #EFEFEF;
+}
+.fudiku-cart-area .cart-content .cart-desc{
+    /* width: 60%; */
+}
+.fudiku-cart-area .cart-content .cart-desc .subcategory,
+.fudiku-cart-area .cart-content .cart-desc .packet,
+.fudiku-cart-area .cart-content .cart-desc .date{
+    margin-bottom: 0.5rem;
+}
+.fudiku-cart-area .cart-content .cart-desc .subcategory{
+    font-family: 'ManropeBold';
+}
+.fudiku-cart-area .cart-content .cart-desc .address{
+    font-size: 12px;
+    font-family: 'ManropeLight';
+}
+.fudiku-cart-area .cart-content .cart-desc .date{
+    font-size: 14px;
+}
+.fudiku-cart-area .cart-content .cart-desc .price{
+    color: #F03A40;
+    font-family: 'ManropeBold';
+}
+.fudiku-cart-area .cart-content .cart-menu{
+    /* width: 40%; */
+    /* border: 1px solid #000; */
+}
+.fudiku-cart-area .cart-content .cart-menu .cart-img{
+    overflow: hidden;
+    border-radius: 15px;
+    height: 150px;
+    /* border: 1px solid #000; */
+}
+.fudiku-cart-area .cart-content .cart-menu .cart-img img{
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
+.fudiku-cart-area .cart-content .cart-menu .cart-desc .date{
+    font-size: 12px;
+}
+.fudiku-cart-area .cart-content .cart-menu .cart-desc .name{
+    font-family: 'ManropeBold';
+    font-size: 14px;
+    margin: 0;
+}
+.fudiku-cart-detail-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    margin: .5rem 0rem 0rem 0rem;
+    background-color: #FFF;
+}
+.fudiku-cart-detail-area .cart-detail-content{
+    position: relative;
+}
+.fudiku-cart-detail-area .cart-detail-content .btn{
+    padding: 12px;
+}
+.fudiku-cart-detail-area .cart-detail-title .title,
+.fudiku-cart-detail-area .cart-detail-title .subtitle,
+.fudiku-cart-detail-area .cart-detail-title .address{
+    margin-bottom: 0.5;
+}
+.fudiku-cart-detail-area .cart-detail-title .title{
+    font-family: 'ManropeBold';  
+}
+.fudiku-cart-detail-area .cart-detail-title .address{
+    font-size: 14px;
+    font-family: 'ManropeLight';
+}
+.fudiku-cart-detail-area .cart-content{
+    /* border: 1px solid #000; */
+}
+.fudiku-cart-detail-area .cart-menu{
+    position: relative;
+    background-color: #FFF;
+    /* border: 2px solid #F1F2F3; */
+    border-radius: 15px;
+    margin-bottom: 1.25rem; 
+}
+.fudiku-cart-detail-area .cart-menu-item{
+    position: static;
+    margin-top: 1.5rem;
+}
+.fudiku-cart-detail-area .cart-item .cart-img{
+    height: 125px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.fudiku-cart-detail-area .cart-item .cart-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.fudiku-cart-detail-area .cart-item .cart-desc{
+    margin: 0.5rem 0rem;
+    font-family: 'ManropeBold';
+}
+.fudiku-cart-detail-area .cart-item .cart-desc .date{
+    font-family: 'ManropeLight';
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.fudiku-cart-detail-area .cart-menu .cart-title .title{
+    font-family: 'ManropeBold';
+}
+.fudiku-cart-detail-area .cart-menu .cart-title .address{
+    font-size: 12px;
+    font-family: 'ManropeLight';
+}
+.fudiku-cart-detail-area .cart-information{
+    background-color: #F0F0F0;
+    padding: 20px;
+    border-radius: 15px;
+}
+.fudiku-cart-detail-area .cart-information .title{
+    color: #555;
+    font-family: 'ManropeBold';
+}
+.fudiku-cart-detail-area .cart-information .price{
+    color: #EB484E;
+    font-family: 'ManropeBold';
+}
+.fudiku-cart-empty-area{
+    position: relative;
+    padding: 1.5rem 0rem;
+    /* margin: .5rem 0rem 0rem 0rem; */
+    background-color: #FFF;
+}
+.fudiku-cart-empty-area .cart-empty-content{
+    /* border: 1px solid #000; */
+}
+.fudiku-cart-empty-area .cart-empty-img{
+    /* border: 1px solid #000; */
+    margin-bottom: 1.25rem;
+    width: 100%;
+    height: 400px;
+    margin: auto auto 1.25rem auto;
+}
+.fudiku-cart-empty-area .cart-empty-img img{
+    /* border: 1px solid #000; */
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.fudiku-cart-empty-area .cart-empty-title{
+    text-align: center;
+    margin-bottom: 1.25rem;
+    /* border: 1px solid #000; */
+}
+.fudiku-cart-empty-area .cart-empty-title .title{
+    font-family: 'ManropeBold';
+    margin: 0;
+}
+.fudiku-cart-empty-area .cart-empty-cta{
+    /* border: 1px solid #000; */
+}
+.fudiku-cart-empty-area .cart-empty-cta .btn{
+    border: 2px solid #EB484E;
+    font-family: 'ManropeLight';
+    color: #EB484E;
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+}
+.fudiku-cart-empty-area .cart-empty-cta .btn:focus{
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    color: #FFF;
+}
+.footer-web{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 3rem 0rem;
+    background-color: rgb(248, 248, 248);
+}
+.footer-web .title{
+    font-family: 'ManropeBold';
+    color: #2a2a2a;
+}
+.footer-web .body-text{
+    color: #555;
+    font-size: 12px;
+    font-family: 'ManropeLight';
+}
+.footer-web .footer-location .location-info{
+    /* border: 1px solid #000; */
+}
+.footer-web .footer-location .location-info .address{
+    color: #C5C5C5;
+    font-size: 1rem;
+    font-family: 'ManropeLight';
+}
+.footer-web .footer-about .about-info{
+    margin-bottom: 10px;
+}
+.footer-web .footer-about .social-media {
+    display: flex;
+}
+.footer-web .footer-about .social-media .icon{
+    margin-right: 5px;
+    background-color: #3A3A3A;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+.footer-web .footer-about .social-media .icon a{
+    color: #FFF;
+    text-decoration: none;
+}
+.footer-web .footer-contact p{
+    margin: .5rem 0rem;
+    color: #C5C5C5; 
+}
+.footer-web .footer-payment .payment-item{
+    display: flex;
+}
+.footer-web .footer-payment .payment{
+    background-color: #FFF;
+    width: 75px;
+    margin-right: 5px;
+    padding: .5rem  ;
+    border-radius: 15px;
+}
+.footer-web .footer-payment .payment-img{
+
+}
+.footer-web .footer-payment .payment-img img{
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 576px){
+    html{
+        position: relative;
+    } 
+    body{
+        font-size: 16px;
+        /* margin-top: 93px; */
+        background-color: #F5F5F7;
+        margin-bottom: 255px;
+    }
+    .header-web .navbar{
+        background-color: #FFF;
+        padding: 1.5rem 0rem;
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1020;
+    }
+    .header-web .navbar-brand img{
+        width: 120px;
+    }
+    .header-web .navbar-nav .register{
+        background-image: linear-gradient(180deg,#F03A40,#EB484E);
+        color: #FFF;
+        padding: 5px 20px;
+        border-radius: 15px;
+    }
+    .mobile-top-nav{
+        display: none;
+    }
+    .mobile-bottom-nav{
+        display: none;
+    }
+    .fudiku-home-area{
+        position: relative;
+        padding: 3.5rem 0rem;
+        margin: 0rem 0rem .5rem 0rem;
+        overflow: hidden;
+        background-color: #FFF;
+        
+    }
+    .fudiku-feature-area{
+        position: relative;
+        padding: 3.5rem 0rem;
+        margin: 0.5rem 0rem 0.5rem 0rem;
+        /* background-color: rgb(248, 248, 248); */
+        background-color: #FFF;
+    }
+    .fudiku-search-area{
+        position: relative;
+        background-color: #FFF;
+        margin-bottom: 0.5rem;
+        padding: 1.5rem 0rem;
+    }
+    .fudiku-search-area .search-content{
+        display: flex;
+        max-width: 1140px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-search-area .fudiku-search{
+        /* border: 1px solid #000; */
+        width: 60%;
+    }
+    .fudiku-search-area .fudiku-search .form-field{
+        position: relative;
+    }
+    .fudiku-search-area .fudiku-search .form-field input{
+        padding: 22px 15px;
+        border-radius: 15px;
+        border: 2px solid #F1F2F0;
+        /* box-shadow: 0 2px 4px rgb(15 34 58 / 12%); */
+    }
+    .fudiku-search-area .fudiku-search .form-field .btn{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 6px 12px;
+        border-radius: 15px;
+        /* border: 1px solid #000; */
+        background-image: linear-gradient(180deg,#F03A40,#EB484E);
+        color: #FFF;
+    }
+    .fudiku-search-area .fudiku-category{
+        width: 40%;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-search-area .fudiku-category .nav{
+        justify-content: flex-end;  
+        flex-direction: row;
+    }
+    .fudiku-search-area .fudiku-category .nav-item{
+        margin-left: 5px;
+    }
+    .fudiku-search-area .fudiku-category .nav-item.active .nav-link{
+        background-color: #EB484E;
+        color: #FFF;
+    }
+    .fudiku-search-area .fudiku-category .nav-link{
+        border-radius: 15px;
+        /* border-color: #5A5A5A; */
+        border: 2px solid #F1F2F0;
+        color: #555;
+        padding: 10px 15px;
+    }
+    .fudiku-delivery-area{
+        background-color: #FFF;
+        padding: 1.5rem 0rem;
+        margin-bottom: .5rem;
+    }
+    .fudiku-location-area .location-content{
+        display: flex;
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .fudiku-location-area .location-form{
+        position: relative;
+        margin: 150px 0px ;
+        width: 50%; 
+    }    
+    .fudiku-location-area .location-form::before{
+        content: '';
+        position: absolute;
+        right: 0;
+        transform: translate(50px,-50px);
+        z-index: 0;
+        background-image: linear-gradient(90deg,#F03A40,#EB484E);
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+    .fudiku-location-area .location-form .form{
+        position: relative;
+        padding: 3.5rem 3rem;
+        border-radius: 15px;
+        background-color: #FFF;
+        border: 2px solid #EFEFEF;
+        /* box-shadow: 0 2px 4px rgb(15 34 58 / 12%); */
+    }
+    .fudiku-location-area .location-img-area{
+        width: 50%;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-location-area .location-img{
+        height: 500px;
+        width: 100%;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-location-area .location-img img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .fudiku-menu-area .menu-content::before{
+        height: 243px;
+    }
+    .fudiku-order-area .order-menu::before{
+        height: 267px;
+        
+    }
+    .fudiku-order-area .order-menu-item{
+        position: static;
+        height: 250px;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-order-area .order-menu-item .menu-item{
+        height: 250px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .fudiku-order-area .order-menu-item .menu-desc{
+        height: 100px;
+        background-color: #FFF;
+    }
+    .fudiku-schedule-area .schedule-menu .menu-item{
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+        border-radius: 15px;
+    }
+    .fudiku-schedule-area .schedule-menu .menu-desc{
+        height: 100px;
+        background-color: #FFF;
+    }
+}
+@media (max-width: 992px){
+    .header-web .navbar{
+        background-color: #FFF;
+        padding: 1.5rem 1rem;
+    }
+}
+@media (max-width: 768px){
+    .header-web .navbar{
+        background-color: #FFF;
+        padding: 1.5rem 1rem;
+    }
+}
+@media (max-width: 576px){
+    html{
+    }
+    body{
+        font-size: 14px;
+        background-color: #F5F7FA;
+        /* margin-top: 80px; */
+    }
+    .header-web{
+        display: none;
+    }
+    .footer-web{
+        display: none;
+    }
+    .mobile-top-nav{
+        background-color: #FFF;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1020;
+    }
+    .mobile-top-nav .navbar{
+        padding: 0;
+    }
+    .mobile-top-nav .navbar-brand img{
+        width: 100px;
+        object-fit: cover;
+    }
+    .mobile-top-nav .navbar-collapse.show{
+        /* border: 1px solid #000; */
+    }
+    .mobile-top-nav .navbar-collapse{
+        /* position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #FFF; */
+    }
+    .mobile-top-nav .navbar-collapse .navbar-nav{
+        
+    }
+    .mobile-top-nav .navbar-collapse .navbar-nav .nav-item{
+        /* flex-direction: row;
+        display: flex; */
+    }
+    .mobile-top-nav .navbar-collapse .navbar-nav .nav-item .nav-link{
+        margin-right: 15px;
+        color: #000;
+    }
+    .mobile-bottom-nav{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: #FFF;
+        margin: 15px;
+        border-radius: 50px;
+        transition: .5s;
+        /* box-shadow: 0px 1px 5px rgb(15 34 58 / 12%); */
+        border: 2px solid #EFEFEF;
+    }
+    .mobile-bottom-nav .navbar-nav{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .mobile-bottom-nav .navbar-nav .nav-item.active .nav-link{
+        color: #555;
+    }
+    .mobile-bottom-nav .navbar-nav .nav-item{
+        width: 33%;
+        text-align: center;
+        color: #555;
+    }
+    .mobile-bottom-nav .navbar-nav .nav-item .nav-link{
+        text-align: center;
+        font-size: 14px;
+        padding: 0;
+        background-color: #F03A40;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        border-radius: 50%;
+    }
+    .mobile-bottom-nav .navbar-nav .nav-item .nav-link i:before{
+        color: #FFF;
+        line-height: 40px;
+    }
+    .fudiku-home-area{
+        position: relative;
+        padding: 1.5rem 0rem;
+        margin: 0rem 0rem .5rem 0rem;
+        overflow: hidden;
+        background-color: #FFF;
+        
+    }
+    .fudiku-home-area .owl-theme .owl-nav.disabled + .owl-dots{
+        margin-top: 1.25rem;
+    }
+    .fudiku-home-area .home-img{
+        /* border: 1px solid #000; */
+    }
+    .fudiku-home-area .home-img img{
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+    }
+    .fudiku-home-area .home-text{
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+    .fudiku-feature-area{
+        position: relative;
+        padding: 1.5rem 0rem;
+    }
+    .fudiku-search-area{
+        position: relative; 
+        background-color: #FFF;
+        padding: 1.5rem 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .fudiku-search-area .fudiku-search{
+        width: 100%;
+    }
+    .fudiku-search-area .fudiku-search .form-field{
+        position: relative;
+    }
+    .fudiku-search-area .fudiku-search .form-field input{
+        border: 2px solid #EFEFEF;
+        padding: 22px 15px;
+        border-radius: 15px;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-search-area .fudiku-search .form-field .btn{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 6px 12px;
+        border-radius: 15px;
+        /* border: 1px solid #000; */
+        background-image: linear-gradient(180deg,#F03A40,#EB484E);
+        color: #FFF;
+    }
+    .fudiku-search-area .fudiku-category{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .fudiku-search-area .fudiku-category .nav{
+        justify-content: center;
+    }
+    .fudiku-search-area .fudiku-category .nav-item.active .nav-link{
+        background-color: #EB484E;
+        color: #FFF;
+    }
+    .fudiku-search-area .fudiku-category .nav-item{
+        margin-right: 5px;
+        margin-left: 5px;
+        
+    }
+    .fudiku-search-area .fudiku-category .nav-link{
+        color: #555;
+        padding: 12px;  
+        border-radius: 15px;
+        border: 2px solid #EFEFEF;
+    }   
+    .fudiku-delivery-area{
+        background-color: #FFF;
+        padding: 1.5rem 0rem;
+        margin-bottom: .5rem;
+    }
+    
+    .fudiku-home-area .home-text .title,
+    .fudiku-home-area .body-text,
+    .fudiku-home-area .btn{
+        margin-bottom: 1.25rem;
+    }
+    .fudiku-feature-area .feature-content .col-md-3{
+        max-width: 50%;
+        margin-bottom: 1rem;
+    }
+    .fudiku-location-area .location-form{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .fudiku-location-area .location-form .form{
+        position: relative;
+        background-color: #FFF;
+        padding: 1.5rem 1.5rem;
+        border-top: 2px solid #EFEFEF;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .fudiku-location-area .location-form .location-search-area{
+        position: absolute;
+        bottom: 50px;
+    }
+    .fudiku-location-area .location-img-area{
+        width: 100%;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-location-area .location-img{
+        height: 500px;
+        width: 100%;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-location-area .location-img img{
+        object-fit: contain;
+        width: 100%;
+        /* height: 100%; */
+    }    
+    .fudiku-menu-area .menu-content::before{
+        height: 260px;
+        
+    }
+    .fudiku-order-area .order-menu::before{
+        height: 260px;
+        
+    }
+    .fudiku-order-area .order-menu-item{
+        position: static;
+        height: 250px;
+        /* border: 1px solid #000; */
+    }
+    .fudiku-order-area .order-menu-item .menu-item{
+        height: 250px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .fudiku-order-area .order-menu-item .menu-desc{
+        height: 100px;
+        background-color: #FFF;
+        padding: 10px;   
+    }
+    .fudiku-order-area .order-packet{
+        margin-top: 1.25rem;
+    }
+    .fudiku-schedule-area .schedule-menu{
+        margin-top: 1.25rem;
+    }
+    .fudiku-schedule-area .schedule-cta{
+        margin-top: 1.25rem;
+    }
+    .fudiku-schedule-area .schedule-menu .menu-item{
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+        border-radius: 15px;
+    }
+    .fudiku-menu-area .menu-cta .btn,
+    .fudiku-order-area .order-cta .btn,
+    .fudiku-schedule-area .schedule-cta .btn,
+    .fudiku-payment-area .payment-cta .btn,
+    .fudiku-payment-detail-area .detail-cta .btn{
+        width: 100%;
+    }
+    .fudiku-payment-detail-area .detail-information{
+        margin-bottom: 1.25rem;
+    }
+    .fudiku-cart-detail-area .cart-menu{
+        margin-bottom: 1.25rem;
+    }
+    .fudiku-location-area,
+    .fudiku-cart-area,
+    .fudiku-cart-empty-area,
+    .fudiku-profile-area,
+    .fudiku-profile-blank-area,
+    .fudiku-profile-edit-area,
+    .fudiku-finish-area,
+    .fudiku-cod-area{
+        height: 664px;
+        /* border: 1px solid #000; */
+    }
+    
+    
+
+}

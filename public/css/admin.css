@@ -1,0 +1,241 @@
+@font-face{
+  font-family: 'ManropeLight';
+	src: url('../fonts/Manrope/Manrope-Light.ttf');
+}
+@font-face{
+  font-family: 'Manrope';
+	src: url('../fonts/Manrope/Manrope-Regular.ttf');
+}
+@font-face{
+  font-family: 'ManropeBold';
+  src: url('../fonts/Manrope/Manrope-Bold.ttf');
+}
+body {
+  font-family: 'ManropeLight';
+  overflow-x: hidden;
+  background: #F5F7FA;
+}
+.main-wrapper{
+  display: flex;
+}
+.sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  background-color: #FFF;
+  transition: margin .25s ease-out;
+}
+.sidebar-logo {
+  padding: .5rem 1rem;
+  height: 60px;
+  width: 15rem;
+  background-color: transparent;
+}
+.sidebar-logo img{
+  width: 120px;
+}
+.sidebar-profile{
+  display: flex;
+  padding: 30px 15px;
+  /* background-image: linear-gradient(180deg,#EB484E,#FF4551); */
+}
+.sidebar-profile .profile-img{
+  width: 50px;
+  height: 50px;
+}
+.sidebar-profile .profile-img img{
+  object-fit: cover;
+}
+.sidebar-profile .profile-info{
+  margin: 0 15px;
+  color: #000;
+}
+.sidebar-profile .profile-info .username{
+  font-family: 'ManropeBold';
+}
+.sidebar-menu{
+  width: 15rem;
+  background-color: 
+}
+.sidebar-menu .nav-link:hover{
+
+}
+.sidebar-menu .nav-item.active .nav-link{
+  color: #FFF;
+  background: #FF4551;
+}
+.sidebar-menu .nav-item.collapse.show{
+  background-color: #F5F7FA;
+}
+.sidebar-menu .nav-link{
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #000;
+}
+.main-content{
+  min-width: 100vw;
+}
+.main-nav .toggle{
+  border: 1px solid #EFEFEF;
+  border-radius: 10px;
+}
+.main-nav .navbar{
+  background: #FFF;
+  padding: .5rem 1rem;
+  height: 60px;
+}
+.main-nav .navbar-search{
+  width: 768px;
+  margin-left: 15px;
+}
+
+.main-nav .navbar-search .form-search{
+  position: relative;
+}
+.main-nav .navbar-search input{
+  border-color: #EFEFEF;
+  border-radius: 10px;
+}
+.main-nav .navbar-search button{
+  color: #bba8bff5; 
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* border: 1px solid #EFEFEF; */
+}
+.main-nav .navbar-search button:focus{
+  box-shadow: none;
+}
+.main-nav .navbar-nav{
+  flex-direction: row;
+
+}
+.main-nav .nav-item{
+  margin-left: 15px;
+}
+.main-nav .nav-link{
+  width: 40px;
+  height: 40px; 
+  background-color: #F0F0F0;
+  border-radius: 50%;
+  text-align: center;
+}
+.main-nav .nav-link i{
+  line-height: 25px;
+  color: #bba8bff5;
+  font-size: 18px;
+}
+.main-heading{
+  display: flex;
+  flex-direction: row;
+  height: 45px;
+}
+.main-heading,
+.main-body{
+  margin: 15px;
+}
+.main-heading .breadcrumb{
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5;
+}
+.main-heading .add-area .add-btn{
+  background-color: #EB484E;
+  color: #FFF;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
+.main-heading .breadcrumb-item{
+  font-family: 'ManropeBold';
+}
+.main-heading .breadcrumb-item.active{
+  font-family: 'ManropeLight';
+}
+.main-body .table-area{
+  background-color: #FFF;
+  overflow: hidden;
+  border-radius: 10px;
+  
+}
+.main-body .table-area th,
+.main-body .table-area td{
+  text-align: left;
+}
+.main-body .update-form-area{
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 20px;
+  
+}
+.main-body .table-area .table-header{
+  padding: 1rem 1rem;
+  background-color: #EB484E;
+  color: #FFF;
+}
+.main-body .table-area .table-body{
+  padding: 1rem;
+}
+.main-dashboard{
+  margin-bottom: 1rem;
+}
+.main-dashboard .card-box .card{
+  height: 150px;
+  border: none;
+}
+.main-dashboard .card-circle .card{
+  background-color: transparent;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #EB484E;
+}
+.table th,td{
+  text-align: center;
+}
+.main-wrapper.toggled .sidebar-wrapper {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .sidebar-wrapper {
+    margin-left: 0;
+  }
+  .main-content {
+    min-width: 0;
+    width: 100%;
+  }
+  .main-wrapper.toggled .sidebar-wrapper {
+    margin-left: -15rem;
+  }
+  .main-nav .nav-link{
+    width: 40px;
+    height: 40px; 
+    background-color: #F0F0F0;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+}
+@media (max-width: 768px){
+  .main-nav .navbar{
+    display: flex;
+  }
+  .main-nav .navbar-search{
+    width: auto;
+    display: flex;
+  }
+  .main-nav .navbar-nav .dropdown-menu{
+    position: absolute;
+  }
+  .main-dashboard .card-box .card{
+    margin-bottom: 1rem;
+  }
+  .main-dashboard .card-circle{
+    display: flex;
+    flex-direction: row;
+    display: none;
+    border: 1px solid #000;
+  }
+}

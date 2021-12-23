@@ -1,0 +1,149 @@
+@font-face{
+	font-family: 'ManropeLight';
+	src: url('../fonts/Manrope/Manrope-Light.ttf');
+}
+@font-face{
+	font-family: 'Manrope';
+	src: url('../fonts/Manrope/Manrope-Regular.ttf');
+}
+
+body{
+    background-color: #F9F8F7;
+    font-family: 'Manrope';
+    margin: 0;
+    padding: 0;
+}
+.fudiku-register-user .form-register input{
+    border-radius: 15px;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 14px;
+    border: 2px solid #F0F0F0;
+    font-family: 'ManropeLight';
+}
+.fudiku-register-user .form-register input:focus{
+    box-shadow: none;
+    border: 2px solid #EB484E;
+    /* box-shadow: 0 0 0 2px rgba(235, 72, 78); */
+}
+.fudiku-register-user .form-register .btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    color: #FFF;
+    background-image: linear-gradient(180deg,#F03A40,#EB484E);
+    border-color: #F03A40;
+    font-family: 'ManropeLight';
+    
+}
+@media(min-width: 576px){
+    .fudiku-register-user{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+    .fudiku-register-user .form-register{
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        font-family: 'Manrope';
+        width: 40vw;
+        background-color: #FFF;
+        padding: 200px 50px;
+    }
+    .fudiku-register-user .form-logo{
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    .fudiku-register-user .form-logo img{
+    }
+    .fudiku-register-user .form-img{
+        position: relative;
+        background-image: url(../img/vector/daftar.png);
+        background-size: contain;
+        width: 60vw;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .fudiku-register-user .form-img::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .fudiku-register-user .footer-title{
+        /* border: 1px solid #000; */
+        text-align: center;
+    }
+    .fudiku-register-user .footer-title .have-account{
+        font-size: 14px;
+        margin: 0;
+        
+    }
+    .fudiku-register-user .footer-title .have-account a{
+        text-decoration: none;
+        color: #F03A40;
+    }
+}
+@media (max-width: 576px){
+    .fudiku-register{
+        overflow: hidden;
+        display: flex;
+    }
+    .fudiku-register-user .form-img{
+        position: relative;
+        background-image: url(../img/vector/daftar.png);
+        background-size: contain;
+        height: 290px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* border: 1px solid #000; */
+        
+    }
+    /* .fudiku-register-user .form-img::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+    } */
+    .fudiku-register-user .form-register{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 1.5em;
+        background-color: #FFF;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        z-index: 1;
+        text-align: center;
+        border: 2px solid #EFEFEF;
+        border-bottom: none;
+    }
+    .fudiku-register-user .form-logo{
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+    .fudiku-register-user .form-logo img{
+    }
+    .fudiku-register-user .form-register form{
+    }
+    .fudiku-register-user .footer-title{
+        /* border: 1px solid #000; */
+        text-align: center;
+    }
+    .fudiku-register-user .footer-title .have-account{
+        font-size: 14px;
+        margin: 0;
+        
+    }
+    .fudiku-register-user .footer-title .have-account a{
+        text-decoration: none;
+        color: #F03A40;
+    }
+    
+}
